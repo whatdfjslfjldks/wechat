@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="gray">#E0E0E0</drawable>
+    <drawable name="lightgray">#D3D3D3</drawable>
+    <drawable name="navy_blue">#000080</drawable>
+    <drawable name="wechat_green">#00A944</drawable>
+    <drawable name="navy_gray">#808080</drawable>
+</resources>

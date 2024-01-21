@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="320dp">
+
+    <ImageView
+        android:id="@+id/moments_background"
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:background="@drawable/test"/>
+
+
+
+    <TextView
+        android:id="@+id/moments_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="200dp"
+        android:text="用户名字"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/moments_user_icon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/test"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="190dp"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

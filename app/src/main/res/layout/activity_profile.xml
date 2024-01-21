@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lightgray"
+    tools:context=".activity.ProfileActivity">
+
+    <include layout="@layout/profile_title"/>
+    <LinearLayout
+        android:id="@+id/profile_photo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/background_clickable"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Profile Photo"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"/>
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border_background"
+            android:layout_marginLeft="160dp">
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/test"
+            android:layout_gravity="center"/>
+        </FrameLayout>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chevron_right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background_clickable"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Name"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/name2"
+            android:text="username"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chevron_right"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:id="@+id/profile_tickle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background_clickable"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tickle"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="240dp"
+            android:background="@drawable/chevron_right"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/profile_weixinid"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background_clickable"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Weixin ID"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/weixinid"
+            android:text="Weixin id"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chevron_right"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/profile_myqrcode"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background_clickable"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="My QR Code"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/qrcode"
+        android:layout_marginLeft="200dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chevron_right"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:id="@+id/profile_moreinfor"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background_clickable"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="More Infor"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="240dp"
+            android:background="@drawable/chevron_right"/>
+
+    </LinearLayout>
+
+</LinearLayout>

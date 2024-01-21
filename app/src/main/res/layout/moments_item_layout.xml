@@ -1,0 +1,53 @@
+<!-- item_layout.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal">
+   <ImageView
+       android:id="@+id/item_user_icon"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:background="@drawable/test"
+       android:scaleType="fitXY"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名字"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@drawable/navy_blue"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是用户发布的内容"
+            android:gravity="left"
+            android:inputType="textMultiLine"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_iv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/test"/>
+
+
+</LinearLayout>

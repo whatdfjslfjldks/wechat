@@ -1,0 +1,15 @@
+<!-- res/drawable/green_button_style.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#006400" /> <!-- 深绿色背景颜色 -->
+            <corners android:radius="4dp" /> <!-- 设置半角边框 -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#00FF00" /> <!-- 默认状态下的绿色背景颜色 -->
+            <corners android:radius="4dp" /> <!-- 设置半角边框 -->
+        </shape>
+    </item>
+</selector>

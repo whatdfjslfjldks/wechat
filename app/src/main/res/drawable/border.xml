@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 底层：浅灰色背景 -->
+    <item android:drawable="@android:color/darker_gray" />
+
+    <!-- 顶层：ImageView 带黑色边框 -->
+    <item
+        android:top="2dp"
+    android:left="2dp"
+    android:right="2dp"
+    android:bottom="2dp">
+    <shape
+        android:shape="rectangle">
+        <stroke
+            android:width="2dp"
+        android:color="#000000"
+        />
+    </shape>
+</item>
+    </layer-list>

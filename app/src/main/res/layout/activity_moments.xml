@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <include layout="@layout/moments_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <ImageView
+                android:id="@+id/moments_background"
+                android:layout_width="match_parent"
+                android:layout_height="254dp"
+                android:background="@drawable/test"/>
+
+
+
+            <TextView
+                android:id="@+id/moments_user_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="215dp"
+                android:layout_marginLeft="100dp"
+                android:gravity="right"
+                android:text="用户名字"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/moments_user_icon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/test"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="190dp"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".activity.MomentsActivity"
+            android:scrollbars="none"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/recyclerview">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
